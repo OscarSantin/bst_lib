@@ -1,18 +1,4 @@
-// #include "bst_lib.h"
-#include <iostream>
-#include <string>
-using namespace std;
-struct node {
-    int value;
-    node *rchild;
-    node *lchild;
-    node(int k){
-        value = k;
-        rchild = nullptr;
-        lchild = nullptr;
-    }
-
-};
+//ciao
 node* rcs(node*R,int v){                         //INSERIMENTO RICORSIVO ok
     if(R==nullptr){
         return new node(v);
