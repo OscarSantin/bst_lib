@@ -2,18 +2,77 @@
 #include <iostream>
 #include <string>
 using namespace std;
-struct node {
-    int value;
+class node {
+    private:
+    int data;
     node *rchild;
     node *lchild;
+    int weight;
+    public:
     node(int k){
-        value = k;
+        data = k;
         rchild = nullptr;
         lchild = nullptr;
+        weight = 0;
     }
-
+    int getData(){
+        return data;
+    }
+    void setData(int key){
+        data=key;
+    }
+    node* getRchild(){
+        return rchild;
+    }
+    void setRchild(node* setter){
+        rchild=setter;
+        return;
+    }
+    node* getLchild(){
+        return lchild;
+    }
+    void setLchild(node* setter){
+        lchild=setter;
+        return;
+    }
+    int getWeight(){
+        return weight;
+    }
+    void setWeight(int n){
+        weight=n;
+    }
 };
-node* rcs(node*R,int v){                         //INSERIMENTO RICORSIVO ok
+node* itr(node*current,int k){   
+    node*root=current;    
+    if(current == nullptr)return new node(k);            //INSERIMENTO ITERATTIVO ok
+    while(current!=nullptr){
+        if(current->getData()==k){
+            break;
+        }
+        if(current->getData()>k){
+            if(current->getLchild()==nullptr){
+                current->setLchild(new node(k));
+                break;
+            }
+            current=current->getLchild();
+        }
+        else{
+            if(current->getRchild()==nullptr){
+                current->setRchild(new node(k));
+                break;
+            }
+            current=current->getRchild();
+        }
+    }
+    return root;
+};
+void inOrder(node* Node) {                          //VISITA SOTTOALBERO SINISTRO, NODO, SOTTOALBERO DESTRO ok
+if (Node == nullptr) return;
+inOrder(Node->getLchild());
+cout << Node->getData() << " ";
+inOrder(Node->getRchild());
+}
+/*node* rcs(node*R,int v){                         //INSERIMENTO RICORSIVO ok
     if(R==nullptr){
         return new node(v);
     }
@@ -28,30 +87,7 @@ node* rcs(node*R,int v){                         //INSERIMENTO RICORSIVO ok
     }
     return R;
 };
-node* itr(node*current,int k){   
-    node*root=current;    
-    if(current == nullptr)return new node(k);            //INSERIMENTO ITERATTIVO ok
-    while(current!=nullptr){
-        if(current->value==k){
-            break;
-        }
-        if(current->value>k){
-            if(current->lchild==nullptr){
-                current->lchild=new node(k);
-                break;
-            }
-            current=current->lchild;
-        }
-        else{
-            if(current->rchild==nullptr){
-                current->rchild=new node(k);
-                break;
-            }
-            current=current->rchild;
-        }
-    }
-    return root;
-};
+
 node *findKey(node*current, int k){              //CERCARE KEY ok
     while(current!=nullptr){
         if(k>current->value){
@@ -68,7 +104,7 @@ node *findKey(node*current, int k){              //CERCARE KEY ok
     return nullptr;
 };
 void deletenode(node*current, int k){         //ELIMINAZIONE DI NODI  ok
-    node *parent;
+    node *parent{nullptr};
     bool dxorsx;
     while(current!=nullptr){
         if(k>current->value){
@@ -82,7 +118,8 @@ void deletenode(node*current, int k){         //ELIMINAZIONE DI NODI  ok
             current=current->lchild;
         }
         else{
-            break;
+            cout<<"nodo non trovato";
+            return;
         }
     }
     if(current->lchild==nullptr && current->rchild==nullptr){
@@ -125,12 +162,7 @@ cout << Node->value << " ";
 preOrder(Node->lchild);
 preOrder(Node->rchild);
 }
-void inOrder(node* Node) {                          //VISITA SOTTOALBERO SINISTRO, NODO, SOTTOALBERO DESTRO ok
-if (Node == nullptr) return;
-inOrder(Node->lchild);
-cout << Node->value << " ";
-inOrder(Node->rchild);
-}
+
 void postOrder(node* Node) {                        //VISITA SOTTOALBERO SINISTRO, SOTTOALBERO DESTRO, NODO ok
 if (Node == nullptr) return;
 postOrder(Node->lchild);
@@ -153,29 +185,26 @@ int Hbst(node*Node) {                               //ALTEZZA MASSIMA ALBERO ok
 
   return max(l, r) + 1;
 }
-bool isBST(node* root){                           //VERIFICA BST 
+bool isBST(node* root){  
+    bool f;                         //VERIFICA BST 
     if(root==nullptr)return true;
     if(root->lchild==nullptr && root->rchild==nullptr){
-        isBST(root->lchild);
-        isBST(root->rchild);
+        f=isBST(root->lchild);
+        f=isBST(root->rchild);
     }
     else if(root->lchild==nullptr){
         if(root->value<root->rchild->value){
-            isBST(root->rchild);
+            f=isBST(root->rchild);
         }
     }
     else if(root->rchild==nullptr){
         if(root->value>root->lchild->value){
-            isBST(root->rchild);
+            f=isBST(root->rchild);
         }
     }
     else if(root->value>root->lchild->value  && root->value<root->rchild->value ){
-        isBST(root->lchild);
-        isBST(root->rchild);
+        f=isBST(root->lchild);
+        f=isBST(root->rchild);
     }
-    else{
-        return false;
-    }
-    return true;
-}
-
+    return f;
+}*/
