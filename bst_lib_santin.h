@@ -9,7 +9,7 @@ class node {
     node *lchild;
     int weight;
     public:
-    node(int k){
+    node(int k=0){
         data = k;
         rchild = nullptr;
         lchild = nullptr;
@@ -34,17 +34,50 @@ class node {
     void setLchild(node* setter){
         lchild=setter;
         return;
-    }
+    } 
     int getWeight(){
         return weight;
     }
     void setWeight(int n){
         weight=n;
     }
+    node* rcs(int v);
+    void inOrder();
 };
-node* itr(node*current,int k){   
+node* node::rcs(int v){ 
+    if(this==nullptr){
+        return new node(v);
+    }
+    if(this->data==v){ 
+        return this;
+    }
+    if(this->data>v){
+        this->lchild=this->lchild->rcs(v);
+    }
+    else{
+         this->rchild=this->rchild->rcs(v);
+    }
+    return this;
+};                        
+    /*if(this==nullptr){
+        return new node(v);
+    }
+    if(this->getData()==v){
+        return R;
+    }
+    if(this->getData()>v){
+        this=this->getLchild();
+        this=rcs(v)
+    }
+    else{
+         this=this->getRchild();
+         this=rcs(v)
+    }
+    return this;};*/
+
+/*node* itr(node*current,int k){   
     node*root=current;    
-    if(current == nullptr)return new node(k);            //INSERIMENTO ITERATTIVO ok
+    if(current == nullptr)return new node(k);            
     while(current!=nullptr){
         if(current->getData()==k){
             break;
@@ -65,10 +98,10 @@ node* itr(node*current,int k){
         }
     }
     return root;
-};
-void inOrder(node* Node) {                          //VISITA SOTTOALBERO SINISTRO, NODO, SOTTOALBERO DESTRO ok
-if (Node == nullptr) return;
-inOrder(Node->getLchild());
-cout << Node->getData() << " ";
-inOrder(Node->getRchild());
+};*/
+void node::inOrder() {                          //VISITA SOTTOALBERO SINISTRO, NODO, SOTTOALBERO DESTRO ok
+if (this == nullptr) return;
+this->lchild->inOrder();
+cout << this->data<< " ";
+this->rchild->inOrder();
 }
