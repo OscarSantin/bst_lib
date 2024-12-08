@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\",
+  "WorkspaceRootPath": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\testing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\testing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|solutionrelative:bst_lib_santin\\testing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\bst_lib_santin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\bst_lib_santin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|solutionrelative:bst_lib_santin\\bst_lib_santin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\bst_lib_santin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\bst_lib_santin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3DF3D810-B62A-4F8F-B20A-65C0F15E1D0D}|bst_lib_santin\\bst_lib_santin.vcxproj|solutionrelative:bst_lib_santin\\bst_lib_santin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "testing.cpp",
-              "DocumentMoniker": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\testing.cpp",
+              "DocumentMoniker": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\testing.cpp",
               "RelativeDocumentMoniker": "bst_lib_santin\\testing.cpp",
-              "ToolTip": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\testing.cpp",
+              "ToolTip": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\testing.cpp",
               "RelativeToolTip": "bst_lib_santin\\testing.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -41,27 +41,25 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "bst_lib_santin.cpp",
-              "DocumentMoniker": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\bst_lib_santin.cpp",
+              "DocumentMoniker": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\bst_lib_santin.cpp",
               "RelativeDocumentMoniker": "bst_lib_santin\\bst_lib_santin.cpp",
-              "ToolTip": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\bst_lib_santin.cpp",
+              "ToolTip": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\bst_lib_santin.cpp",
               "RelativeToolTip": "bst_lib_santin\\bst_lib_santin.cpp",
               "ViewState": "AgIAAF0AAAAAAAAAAAAhwGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-28T14:39:27.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T14:39:27.766Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "bst_lib_santin.h",
-              "DocumentMoniker": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\bst_lib_santin.h",
+              "DocumentMoniker": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\bst_lib_santin.h",
               "RelativeDocumentMoniker": "bst_lib_santin\\bst_lib_santin.h",
-              "ToolTip": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib_santin\\bst_lib_santin\\bst_lib_santin.h",
+              "ToolTip": "C:\\Users\\bboyp\\Documents\\Scuola\\Anno_2024_5\\bst_lib(VS)\\bst_lib_santin\\bst_lib_santin.h",
               "RelativeToolTip": "bst_lib_santin\\bst_lib_santin.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-28T14:39:06.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T14:39:06.694Z"
             }
           ]
         }
