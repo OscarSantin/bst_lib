@@ -10,8 +10,6 @@ node::node(int k) {
     weight = 0;
 }
 
-//node::node() {};
-
 int node::getData() const{
     return data;
 }
