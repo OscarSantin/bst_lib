@@ -12,7 +12,6 @@ private:
     int weight;
 public:
     node(int k = 0);
-    //node();
     friend ostream& operator<<(ostream&, const node&);
     friend istream& operator>>(istream&, node&);
     int getData() const;
@@ -33,6 +32,5 @@ public:
     node* deleteNode(int k); // cancellazione del nodo k
     bool isBst(int minVal=INT_MIN, int maxVal=INT_MAX);
 };
-
 
 #endif
